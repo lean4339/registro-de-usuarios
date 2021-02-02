@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+    <form action="/login" method="POST">
+        <label for="nombre">Nombre</label>
+    <input type="text" name="nombre" id="nombre">
+    <label for="password">Contraseña</label>
+    <input type="password" name="password" id="password">
+    <button type="submit">ingresar</button>
+    </form>
+    <div>
+        <% if (error != "undefined") { %>
+         <p><%= error %> </p>
+        <% } %> 
+    </div>
+</body>
+</html>
